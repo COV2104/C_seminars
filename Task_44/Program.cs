@@ -25,7 +25,7 @@ Console.WriteLine();
 Console.Write("Введите количество необходимых чисел Фибоначчи: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-int[] fib = new int[n];
+double[] fib = new double[n];
 
 
 for (int i = 2; i < n; i++)
@@ -36,6 +36,6 @@ for (int i = 2; i < n; i++)
 }
 for (int i = 0; i < n; i++)
 {
-    Console.Write($"{fib[i]} ");
+    Console.WriteLine($"f({i+1}) = {fib[i]} ");
 }
 Console.WriteLine();
